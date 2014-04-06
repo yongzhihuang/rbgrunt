@@ -13,6 +13,9 @@ requirejs.config({
       deps: ['lib/underscore-min', 'lib/jquery-min'], 
       exports: 'Backbone'
     },
+    'lib/handlebars': {
+      exports: 'Handlebars'
+    },
     'app': {
       deps: ['lib/underscore-min', 'lib/backbone-min']
     }
@@ -21,7 +24,7 @@ requirejs.config({
 });
 
 require([
-	'app', 
+	'app',
 	'config'
 ], function(App, Config) {
 

@@ -1,23 +1,28 @@
 define([
+  'lib/handlebars',
+  'models/util'
+], function(Handlebars, Util) {
   
-],
-
-function() {
   var thingView = Backbone.View.extend({
-    id: 'main',
-    tagName: 'div',
-    className: 'container-fluid',
-    el: 'body',
+
+    el: $('#content'),
+    template: '#handlebars-template-div',
 
     events: {
+
     },
 
     initialize: function() {
-      
+      this.render();
     },
 
     render: function() {
-      
+      var util = new Util();
+
+      var source = util.template(this.template);
+      var template = Handlebars.compile(source);
+
+      this.$el.html(template);
     }
   });
 
