@@ -1,1 +1,1 @@
-define([],function(){var e=function(){};return e.prototype={},e});
+define(["views/thing","collections/things"],function(e,t){var n=function(t){this.init(t),this.views.thingView=new e,this.views.thingView.render()};return n.prototype={init:function(e){}},n});

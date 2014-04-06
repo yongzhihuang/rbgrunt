@@ -1,0 +1,1 @@
+define([],function(){var e=Backbone.View.extend({id:"",tagName:"",className:"",el:"",events:{},initialize:function(){console.log("im a thing")},render:function(){console.log("thing render")}});return e});

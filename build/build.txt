@@ -1,5 +1,13 @@
 
+css/style.css
+----------------
+css/style.css
+
 js/main.js
 ----------------
+js/views/thing.js
+js/models/thing.js
+js/collections/things.js
 js/app.js
+js/config.js
 js/main.js
